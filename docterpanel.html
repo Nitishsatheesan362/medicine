@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="docterpanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Patients</h2>
+            <div class="patient-list">
+                <div class="patient-item">
+                    <span class="patient-name">Sanjay Gupta</span>
+                    <div class="actions">
+                        <button class="edit" onclick="redirectToEdit()">11:00 AM</button>
+                        <button class="delete">10/4/2024</button>
+                        <button class="schedule">Regular Checkup</button>
+                    </div>
+                </div>
+                <div class="patient-item">
+                    <span class="patient-name">Riya Sharma</span>
+                    <div class="actions">
+                        <button class="edit" onclick="redirectToEdit()">2:00 PM</button>
+                        <button class="delete">10/4/2024</button>
+                        <button class="schedule">Diagnosis</button>
+                    </div>
+                </div>
+                <!-- Add more patients as needed -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Appointments</h2>
+            <div class="appointment-list">
+                <div class="appointment-item">
+                    <span class="patient-name">Sanjay Gupta</span>
+                    <span class="date">Date: 10/04/2024</span>
+                    <div class="actions">
+                        <button class="edit" onclick="redirectToEdit()">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <span class="patient-name">Riya Sharma</span>
+                    <span class="date">Date: 10/04/2024</span>
+                    <div class="actions">
+                        <button class="edit" onclick="redirectToEdit()">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <!-- Add more appointments as needed -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToEdit() {
+            window.location.href = "edit.html";
+        }
+    </script>
+</body>
+</html>
